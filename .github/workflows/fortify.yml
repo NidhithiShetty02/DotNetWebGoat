@@ -46,6 +46,12 @@ jobs:
         with:
           java-version: 17
           distribution: 'temurin'
+      - name: Download Fortify ScanCentral Client
+        uses: fortify/gha-setup-scancentral-client@5b7382f8234fb9840958c49d5f32ae854115f9f3
+      - name: Package Code + Dependencies
+        run: scancentral package $PACKAGE_OPTS -o package.zip
+        env:
+          PACKAGE_OPTS: "-bt none"
 
       # Perform SAST and optionally SCA scan via Fortify on Demand/Fortify Hosted/Software Security Center, then
       # optionally export SAST results to the GitHub code scanning dashboard. In case further customization is
