@@ -61,7 +61,7 @@ jobs:
           FOD_URL: https://ams.fortify.com
           FOD_TENANT: DXC_Demo
           FOD_USER: nidhithi_Demo
-          FOD_PASSWORD: Nidhithidemo@123
+          FOD_PASSWORD: NUlEVjhOIyY4WWRJRm9hMXZ3cXkydHRjU1ZfSGZY0
           ### Optional configuration when integrating with Fortify on Demand
           # EXTRA_PACKAGE_OPTS: -oss                       # Extra 'scancentral package' options, like '-oss'' if
                                                            # Debricked SCA scan is enabled on Fortify on Demand
